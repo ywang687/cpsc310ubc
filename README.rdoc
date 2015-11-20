@@ -7,7 +7,7 @@ Project for the UBC course CPSC 310-Introduction to Software Engineering (spring
 Deployed on:
 https://vanvendordiary.herokuapp.com
 
-Due to some deprecated gems and lack of time for updates, I just made some quick & dirty fixes to make it work. Most features should be working but I do recommend signing in with a facebook account for the best experience. Contact me if you find any issues!
+Due to some deprecated gems and lack of time for updates, I just made some quick & dirty fixes to make it work. Most features should be working but I do recommend signing in with a facebook account for the best experience (however account registration is tested and works!). Contact me if you find any issues!
 
 
 Gems used:
