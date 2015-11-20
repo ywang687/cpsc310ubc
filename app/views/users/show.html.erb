@@ -1,0 +1,34 @@
+<% provide(:title, @user.name)%>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <em><%= @user.name %></em>
+      </h1>
+    </section>
+    
+    EMAIL: <address><%= @user.email %></address>
+    <div class="btn-group-vertical" role="group">
+      <button type="button" class="btn btn-default navbar-btn" onclick="userComments()">Comments</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userHistory()">Visited Vendors</button>
+      <button type="button" class="btn btn-default navbar-btn" onclick="userFavourites()">Favourite Vendors</button>
+    </div>
+  </aside>
+
+  <div id="user_comments">
+    <%= render 'shared/comments', object: @user %>
+  </div>
+
+  <div id="user_history">
+    <%= render 'shared/history_entries', object: @user %>
+  </div>
+
+  <div id="user_favourites">
+    This function is still under construction~
+  </div>
+
+  <script type="text/javascript">loadScript();</script>
+</div>
+
+
